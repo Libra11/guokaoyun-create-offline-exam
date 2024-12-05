@@ -1,0 +1,42 @@
+{
+  "name": "offline-create-exam",
+  "version": "1.0.0",
+  "description": "离线考试创建工具",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "offline-create-exam": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "pkg .",
+    "build:win": "pkg . -t node18-win-x64 -o dist/create-exam-win.exe --public",
+    "build:mac": "pkg . -t node18-macos-x64 -o dist/create-exam-macos --public"
+  },
+  "pkg": {
+    "scripts": [
+      "src/**/*.js"
+    ],
+    "assets": [
+      "assets/**/*",
+      "config/**/*",
+      "node_modules/**/*"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "ora": "^7.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}

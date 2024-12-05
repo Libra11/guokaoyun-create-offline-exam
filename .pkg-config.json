@@ -1,0 +1,10 @@
+{
+  "pkg": {
+    "scripts": ["src/**/*.js", "node_modules/**/*.js"],
+    "assets": ["assets/**/*", "config/**/*", "node_modules/**/*"],
+    "targets": ["node18-win-x64", "node18-macos-x64"],
+    "outputPath": "dist",
+    "bytecode": false,
+    "public": true
+  }
+}

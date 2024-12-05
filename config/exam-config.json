@@ -1,0 +1,89 @@
+{
+  "apiBaseUrl": "https://supernova-api.iguokao.com/exam/api/v1",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJST0xFX1BBUEVSIiwiUk9MRV9TSVRFX0FETUlOIiwiUk9MRV9TWVNfQURNSU4iXSwic3ViIjoiNjRkZjQ0MGFhOWJmMTUzYWFjNTg2NTYxIiwiaWF0IjoxNzMzMzAwMzc3LCJleHAiOjE3MzMzODY3Nzd9.kr-FxcTxT7JVdFv2sUrmTjpYtPUBOEzRayGFokTuUGw",
+  "useMultipleRooms": true,
+  "project": {
+    "name": "Libra test7",
+    "shortName": "dddd",
+    "startAt": "2024-12-05 16:21:00",
+    "endAt": "2024-12-07 16:21:00",
+    "companyId": "64fe70d9678850220a5669cc",
+    "faceDiff": 1,
+    "fixedPosition": true,
+    "lateSecond": 600,
+    "submitSecond": 600,
+    "requirement": "<p>1111</p>",
+    "admissionCardRequirement": "<p>2222</p>",
+    "note": ""
+  },
+  "periods": [
+    {
+      "name": "时段1",
+      "duration": 6000,
+      "startAt": "2024-12-05 16:21:00",
+      "subjects": [
+        {
+          "name": "科目1",
+          "duration": 6000,
+          "calculatorEnabled": true,
+          "showScore": true,
+          "note": "科目1备注",
+          "companyId": "64fe70d9678850220a5669cc",
+          "parts": [
+            {
+              "name": "子卷1",
+              "note": "子卷1备注",
+              "optionRandomized": true,
+              "questionRandomized": true
+            },
+            {
+              "name": "子卷2",
+              "note": "子卷2备注",
+              "optionRandomized": false,
+              "questionRandomized": true
+            }
+          ]
+        },
+        {
+          "name": "科目2",
+          "duration": 3000,
+          "calculatorEnabled": false,
+          "showScore": true,
+          "note": "科目2备注",
+          "companyId": "64fe70d9678850220a5669cc",
+          "parts": [
+            {
+              "name": "子卷3",
+              "note": "子卷3备注",
+              "optionRandomized": true,
+              "questionRandomized": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "时段2",
+      "duration": 6000,
+      "startAt": "2024-12-06 16:21:00",
+      "subjects": [
+        {
+          "name": "科目3",
+          "duration": 6000,
+          "calculatorEnabled": true,
+          "showScore": true,
+          "note": "科目3备注",
+          "companyId": "64fe70d9678850220a5669cc",
+          "parts": [
+            {
+              "name": "子卷4",
+              "note": "子卷4备注",
+              "optionRandomized": true,
+              "questionRandomized": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
